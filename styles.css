@@ -89,6 +89,37 @@ footer {
     height: 20px;
 }
 
+#skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#skills ul li {
+    text-align: center;
+}
+
+.html-icon {
+    width: 400px; 
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.java-icon {
+    width: 400px; 
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.python-icon {
+    width: 300px; 
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+
 .botton {
     background-color: #00cb07; 
     border: none;
