@@ -3,95 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="ricardologo200.png" type="logo">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-</style>
+    <title>Ricardo - Desenvolvedor Front-end</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/certificates.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contato.css">
 
 </head>
 <body>
-
-    <header>
-        <h1>Ricardo Rigo Antunes</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#minha-historia">Minha História</a></li>
-                <li><a href="https://wa.me/54984341758" target="_blank">Contato</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#cursos">Cursos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="sobre">
-        <script>
-            window.addEventListener('load', function() {
-                document.body.classList.add('loaded');
-            });
-        </script>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="profile-container">
+                <img src="Imagem.jpg" alt="Ricardo" class="profile-image">
+            </div>
+            <h1 class="gradient-text">Ricardo</h1>
+            <p>Estudante de Ciência da Computação | Desenvolvedor Front-end</p>
+            <nav class="navbar">
+                <a href="#home" class="nav-button"><span>Home</span></a>
+                <a href="#sobre" class="nav-button"><span>Sobre</span></a>
         
-        <h2>Sobre Mim</h2>
-        <p>Olá, eu me chamo Ricardo sou estudante em Ciência da Computação na Atitus Educação, meu maior desejo de atuação nessa área é front end. Procuro uma nova oportunidade para experiências desafiadoras em minha carreira e acredito que é dessa forma que um profissional pode se manter em constante evolução.</p>
-
-        <img src="foto04.jpg" alt="Foto" class="minha-foto">
-    </section>
-
-    <section id="minha-historia">
-        <h2>Minha História</h2>
-        <div class="historia">
-            <p>Desde criança, sempre fui fascinado por entender como as coisas funcionam. Enquanto outras crianças brincavam com seus brinquedos, eu estava mais interessado em desmontá-los e explorar seus mecanismos internos. Essa curiosidade insaciável me levou a desenvolver uma paixão por mecânicas e tecnologias desde muito cedo.</p>
-            
-            <p>Conforme fui crescendo, meu interesse por desmontar e remontar objetos evoluiu para uma busca por entender sistemas mais complexos. Passei a me interessar por mecânica e, eventualmente, pela computação. Cada nova descoberta me encantava e alimentava meu desejo de aprender mais, no ano de 2023 realizei a prova Enem e fui aprovado pelo sisu em Engenharia Mecânica, porém computação sempre foi meu forte, mas ao mesmo tempo sou fascinado por Veículos Automotores, mesmo assim pensando e refletindo muito decidi em seguir na área de Computação.</p>
-
-            <p></p>Hoje, estou cursando Ciência da Computação, um campo que combina perfeitamente com a minha curiosidade de entender e criar. Durante o curso me preparo para contribuir com inovações significativas no futuro.</p>
-
-            <p>Minha jornada acadêmica é mais do que uma simples escolha de carreira. <strong>Estou ansioso para ver onde essa jornada me levará e como poderei usar minhas habilidades e conhecimentos para fazer a diferença no mundo.</strong></p>
+                <a href="#certificados" class="nav-button"><span>Certificados</span></a>
+                <a href="#contato" class="nav-button"><span>Contato</span></a>
+                
+            </nav>
         </div>
     </section>
 
-    <section id="contato">
-        <h2>Minhas Redes</h2>
-        <p>Email: ricardo_rantunes22@hotmail.com</p>
-        <p><a href="https://www.linkedin.com/in/ricardo-rigo-antunes-5578021a6/" target="_blank"><img src="linkedin.png" alt="logo_linkedin" class="logo">LinkedIn</a></p>
-        <p><a href="https://www.instagram.com/ricardooantunes05/" target="_blank"><img src="instagram.png" alt="logo_instagram" class="logo">Instagram</a></p>
-        <p><a href="https://github.com/RicardoAntuness" target="_blank"><img src="github.png" alt="logo_github" class="logo">GitHub</a></p>
+    <section class="section" id="sobre">
+        <div class="container">
+            <h2 class="gradient-text">Sobre Mim</h2>
+            <p>Olá, eu me chamo Ricardo e sou estudante de Ciência da Computação na Atitus Educação. Tenho grande interesse em desenvolvimento front-end, onde pretendo construir interfaces modernas e intuitivas. Além disso, também sou apaixonado pela área de Quality Assurance, buscando garantir a excelência e a qualidade em cada projeto.</p>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Minhas Habilidades</h2>
-        <ul>
-            <li><img class="html-icon" src="https://apexensino.com.br/wp-content/uploads/2017/11/html-css-javascript.jpg" alt="HTML"></li>
-            <li><img class="java-icon" src="https://proddigital.com.br/wp-content/uploads/java.jpeg" alt="Java"></li>
-            <li><img class="python-icon" src="https://cdn.icon-icons.com/icons2/2699/PNG/512/python_vertical_logo_icon_168039.png" alt="Python"></li>
-        </ul>
+    <section class="section">
+        <div class="container">
+            <h2 class="gradient-text">Minha História</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>O Início</h3>
+                        <p>Desde criança, sempre fui fascinado por entender como as coisas funcionam. Enquanto outras crianças brincavam com seus brinquedos, eu estava mais interessado em desmontá-los e explorar seus mecanismos internos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Evolução</h3>
+                        <p>Conforme fui crescendo, meu interesse por desmontar e remontar objetos evoluiu para uma busca por entender sistemas mais complexos. Passei a me interessar por mecânica e, eventualmente, pela computação.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2023 - Uma Escolha Importante</h3>
+                        <p>Fui aprovado pelo SISU em Engenharia Mecânica, mas após muita reflexão, decidi seguir minha verdadeira paixão: a Computação.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Presente</h3>
+                        <p>Hoje, curso Ciência da Computação, combinando minha curiosidade natural com o desejo de criar e inovar através da tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section class="section" id="certificados">
+        <div class="container">
+            <h2 class="gradient-text">Certificados</h2>
+            <div class="certificates">
+                <div class="certificate-card">
+                    <h3>Workshop</h3>
+                    <p>Atitus Educação - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>XIX Fórum de Meio Ambiente da Juventude</h3>
+                    <p>Alto Uruguai Gaúcho URI ERECHIM - 2023</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>XIX Fórum de Meio Ambiente da Juventude</h3>
+                    <p>Alto Uruguai Gaúcho URI ERECHIM - 2022</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>HTML5 e CSS3</h3>
+                    <p>Curso em Vídeo Guanabara - 120 horas - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Git e GitHub</h3>
+                    <p>Curso em Vídeo Guanabara - 20 horas - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Qualificação em Desenvolvimento de Aplicações Junior</h3>
+                    <p>400 horas - Atitus Educação</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Testes Exploratórios</h3>
+                    <p>11 horas - Udemy - 2025</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>AI e Segurança</h3>
+                    <p>1 hora - Udemy - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Automação de Testes de API com Postman + Projeto de testes</h3>
+                    <p>9 horas - Udemy - 2025</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Início Rápido em Teste e QA</h3>
+                    <p>15 horas - Udemy - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>OWASP Top 10</h3>
+                    <p>43 minutos - Udemy - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Secure Coding Best Practices</h3>
+                    <p>Veracode - 1 hora - Udemy - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Segurança no Dia a Dia com Cloud</h3>
+                    <p>26 minutos - Udemy - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>WiFi Doméstico Riscos</h3>
+                    <p>38 minutos - Udemy - 2024</p>
+                </div>
+                <div class="certificate-card">
+                    <h3>Postman</h3>
+                    <p>1 hora - Udemy - 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contato">
+        <div class="container">
+            <h2 class="gradient-text">Contato</h2>
+            <div class="contact-container">
+                <p class="contact-description">
+                    Vamos conversar? Me encontre nas redes sociais:
+                </p>
+                
+                <div class="social-grid">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/ricardo-rigo-antunes-5578021a6/" class="social-item">
+                        <img src="linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
     
-        <section id="cursos">
-        <h2>Cursos, Certificados e Eventos</h2>
-            <p>● Workshop - Atitus Educação - 2024</p>
-           <p>● XIX Fórum de Meio Ambiente da Juventude do Alto Uruguai Gaúcho URI ERECHIM 2023</p>
-            <p>● XIX Fórum de Meio Ambiente da Juventude do Alto Uruguai Gaúcho URI ERECHIM 2022</p>
-            <p>● HTML5 E CSS3 Curso em vídeo Guanabara 120 horas - 2024</p>
-            <p>● Git e GitHub Curso em vídeo Guanabara 20 horas - 2024</p>
-            <p>● Qualificação em Desenvolvimento de Aplicações Junior 400 Horas - Atitus Educação</p>
+                    <!-- GitHub -->
+                    <a href="https://github.com/RicardoAntuness" class="social-item">
+                        <img src="github.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+    
+                    <!-- Email -->
+                    <a href="mailto:ricardo_rantunes22@hotmail.com" class="social-item">
+                        <img src="outlook.png" alt="Email">
+                        <span>Email</span>
+                    </a>
+    
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/5554984341758" class="social-item">
+                        <img src="whatsapp.png" alt="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
-    <section>
-        <h2>Acesse meu Currículo</h2>
-        <a href="Currículo Ricardo Rigo Antunes.pdf" target="_blank">
-            <button class="botton">Currículo</button>
-        </a>
-    </section>
-
-    <footer>
-        <p>Developed by Ricardo Rigo Antunes. © 2024 All Rights Reserved.</p>
-    </footer>
-
+    <script src="js/main.js"></script>
 </body>
 </html>

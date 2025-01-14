@@ -1,0 +1,7 @@
+/* Reduzindo o espaçamento entre as seções */
+.section {
+    margin-top: 20px; /* Diminua conforme necessário */
+    margin-bottom: 20px; /* Diminua conforme necessário */
+    padding-top: 20px; /* Caso o espaçamento interno seja muito grande */
+    padding-bottom: 20px; /* Ajuste conforme o design */
+}
