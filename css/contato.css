@@ -23,22 +23,23 @@
     border-color: rgba(94, 234, 212, 0.35);
 }
 
-.social-item img {
-    width: 28px;
-    height: 28px;
-}
-
 .social-icon {
-    width: 28px;
-    height: 28px;
+    width: 36px;
+    height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 14px;
     background: linear-gradient(135deg, var(--accent), var(--accent-strong));
     color: #05111d;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.social-icon svg {
+    width: 18px;
+    height: 18px;
+    color: #03111d;
 }
 
 .social-item span {
