@@ -1,6 +1,7 @@
 // Animação de scroll
 const sections = document.querySelectorAll('.section');
 const timelineItems = document.querySelectorAll('.timeline-item');
+const navButtons = document.querySelectorAll('.nav-button');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -13,17 +14,27 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 timelineItems.forEach(item => observer.observe(item));
 
-// Adicionar certificado
-document.querySelector('.add-certificate').addEventListener('click', () => {
-    const certificateTitle = prompt('Digite o título do certificado:');
-    if (certificateTitle) {
-        const certificatesContainer = document.querySelector('.certificates');
-        const newCertificate = document.createElement('div');
-        newCertificate.className = 'certificate-card';
-        newCertificate.innerHTML = `
-            <h3>${certificateTitle}</h3>
-            <p>Clique para editar a descrição</p>
-        `;
-        certificatesContainer.insertBefore(newCertificate, document.querySelector('.add-certificate'));
-    }
-});
+// Atualizar botão ativo da navbar conforme a seção visível
+const sectionIds = ['home', 'sobre', 'certificados', 'contato'];
+
+const activateNav = () => {
+    let current = 'home';
+
+    sectionIds.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 150 && rect.bottom >= 150) {
+                current = id;
+            }
+        }
+    });
+
+    navButtons.forEach((button) => {
+        const href = button.getAttribute('href')?.replace('#', '');
+        button.classList.toggle('active', href === current);
+    });
+};
+
+window.addEventListener('scroll', activateNav);
+window.addEventListener('load', activateNav);

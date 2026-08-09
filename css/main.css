@@ -1,7 +1,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 }
 
 .section {
@@ -16,8 +16,39 @@
     transform: translateY(0);
 }
 
+.section-title {
+    margin-bottom: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.section-intro {
+    color: var(--muted);
+    max-width: 720px;
+    margin-bottom: 2rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.about-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 1.5rem;
+    backdrop-filter: blur(16px);
+    box-shadow: var(--shadow);
+}
+
+.about-card h3 {
+    color: var(--accent);
+}
+
 .gradient-text {
-    background: linear-gradient(45deg, #2E8B57, #3CB371, #4CAF50);
+    background: linear-gradient(90deg, var(--accent), var(--accent-strong), #9b8cff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
